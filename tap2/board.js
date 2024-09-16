@@ -17,9 +17,9 @@ boardStart = () => {
   console.log("Board Starting...");
   board.on("ready", function() {
     // Board Started
-    solenoideValve = new five.Relay(27);
+    solenoideValve = new five.Relay(23);
     solenoideValve.close();
-    sensorFlow = new five.Pin(28);
+    sensorFlow = new five.Pin(24);
 
     sensorFlow.read(function(error, value) {
       // console.log(value);
