@@ -1,7 +1,9 @@
 var five = require("johnny-five");
 var Raspi = require("raspi-io").RaspiIO;
 var board = new five.Board({
-  io: new Raspi()
+  io: new Raspi({
+    includePins:[27,28]
+  })
 });
 var _ = require("lodash");
 var solenoideValve;
