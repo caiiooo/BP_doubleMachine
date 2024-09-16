@@ -122,7 +122,7 @@ finishOperation = user => {
     endCount();
     // const consume = user.credit
     setTimeout(() => {
-      const consume = 500;
+      const consume = getConsume();
       console.log("Final: ", getConsume());
       console.log("User Id", user.userId);
       socket.emit(
